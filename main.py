@@ -31,3 +31,28 @@
 
 Пример использования isPalindromString("Madam, Anna went to the civic center") # ["madam", "anna", "civic"]
 """
+
+# def isPalindrom(word):
+#     cleaner_word = word.replace(" ", "").lower()
+#     reversed_word = cleaner_word[::-1]
+#     return reversed_word == cleaner_word
+# a = input("word")
+# if isPalindrom(a):
+#     print("Палиндром")
+# else:
+#     print("не Палиндром")
+
+# def isPalindrom(word):
+#     cleaner_word = word.replace(" ", "").lower()
+#     reversed_word = cleaner_word[::-1]
+#     return reversed_word == cleaner_word
+
+# def ifpalindrom(list)
+#     isPalindromList(["hello", "list", "level"])
+#     for word in list
+#         if isPalindrom(list):
+#             print("Палиндром")
+#         else:
+#             print("не Палиндром")
+
+
