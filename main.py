@@ -55,4 +55,14 @@
 #         else:
 #             print("не Палиндром")
 
+def isPalindrom(word):
+    cleaner_word = word.replace(" ", "").lower()
+    reversed_word = cleaner_word[::-1]
+    return reversed_word == cleaner_word
 
+word = (["hello", "list", "level"])
+
+if isPalindrom():
+    print("Палиндром")
+else:
+    print("не Палиндром")
