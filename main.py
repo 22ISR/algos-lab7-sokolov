@@ -32,6 +32,11 @@
 Пример использования isPalindromString("Madam, Anna went to the civic center") # ["madam", "anna", "civic"]
 """
 
+
+
+
+# Задание №1
+
 # def isPalindrom(word):
 #     cleaner_word = word.replace(" ", "").lower()
 #     reversed_word = cleaner_word[::-1]
@@ -46,23 +51,24 @@
 #     cleaner_word = word.replace(" ", "").lower()
 #     reversed_word = cleaner_word[::-1]
 #     return reversed_word == cleaner_word
+# a = input("word")
+# if isPalindrom(a):
+#     print("Палиндром")
+# else:
+#     print("не Палиндром")
 
-# def ifpalindrom(list)
-#     isPalindromList(["hello", "list", "level"])
-#     for word in list
-#         if isPalindrom(list):
-#             print("Палиндром")
-#         else:
-#             print("не Палиндром")
+# Задание №2
 
-def isPalindrom(word):
-    cleaner_word = word.replace(" ", "").lower()
-    reversed_word = cleaner_word[::-1]
-    return reversed_word == cleaner_word
+# def isPalindrom(words):
+#     cleaner_word = words.replace(" ", "").lower()
+#     reversed_word = cleaner_word[::-1]
+#     return reversed_word == cleaner_word
 
-word = (["hello", "list", "level"])
+# def isPalindromList(words):
+#     palindroms = []
+#     for word in words:
+#         if isPalindrom(word):
+#             palindroms.append(word)
+#     return palindroms
 
-if isPalindrom():
-    print("Палиндром")
-else:
-    print("не Палиндром")
+# print(isPalindromList(["hello", "ро тор", "list", "level"]))
