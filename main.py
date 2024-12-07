@@ -72,3 +72,18 @@
 #     return palindroms
 
 # print(isPalindromList(["hello", "ро тор", "list", "level"]))
+
+# Задание №3
+def isPalindrom(words):
+    cleaner_word = words.replace(" ", "").lower()
+    reversed_word = cleaner_word[::-1]
+    return reversed_word == cleaner_word
+
+def isPalindromString(string):
+    palindroms = []
+    for word in words:
+        if isPalindrom(word):
+            palindroms.append(word)
+    return palindroms
+
+print(isPalindromString("Madam, Anna went to the civic center"))
