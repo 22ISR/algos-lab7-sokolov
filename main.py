@@ -37,53 +37,70 @@
 
 # Задание №1
 
-# def isPalindrom(word):
-#     cleaner_word = word.replace(" ", "").lower()
-#     reversed_word = cleaner_word[::-1]
-#     return reversed_word == cleaner_word
-# a = input("word")
-# if isPalindrom(a):
-#     print("Палиндром")
-# else:
-#     print("не Палиндром")
+def isPalindrom(word):
+    cleaner_word = word.replace(" ", "").lower()
+    reversed_word = cleaner_word[::-1]
+    return reversed_word == cleaner_word
+a = input("word")
+if isPalindrom(a):
+    print("Палиндром")
+else:
+    print("не Палиндром")
 
-# def isPalindrom(word):
-#     cleaner_word = word.replace(" ", "").lower()
-#     reversed_word = cleaner_word[::-1]
-#     return reversed_word == cleaner_word
-# a = input("word")
-# if isPalindrom(a):
-#     print("Палиндром")
-# else:
-#     print("не Палиндром")
+def isPalindrom(word):
+    cleaner_word = word.replace(" ", "").lower()
+    reversed_word = cleaner_word[::-1]
+    return reversed_word == cleaner_word
+a = input("word")
+if isPalindrom(a):
+    print("Палиндром")
+else:
+    print("не Палиндром")
 
 # Задание №2
 
-# def isPalindrom(words):
-#     cleaner_word = words.replace(" ", "").lower()
-#     reversed_word = cleaner_word[::-1]
-#     return reversed_word == cleaner_word
-
-# def isPalindromList(words):
-#     palindroms = []
-#     for word in words:
-#         if isPalindrom(word):
-#             palindroms.append(word)
-#     return palindroms
-
-# print(isPalindromList(["hello", "ро тор", "list", "level"]))
-
-# Задание №3
 def isPalindrom(words):
     cleaner_word = words.replace(" ", "").lower()
     reversed_word = cleaner_word[::-1]
     return reversed_word == cleaner_word
 
-def isPalindromString(string):
+def isPalindromList(words):
     palindroms = []
     for word in words:
         if isPalindrom(word):
             palindroms.append(word)
     return palindroms
+
+print(isPalindromList(["hello", "ро тор", "list", "level"]))
+
+# Задание №3
+def punctuation(string):
+    punctuation = "!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~"
+    result = ""
+
+    for char in string:
+        if char not in punctuation:
+            result += char
+
+    return result
+
+def isPalindrom(words):
+    cleaner_word = words.replace(" ", "").lower()
+    reversed_word = cleaner_word[::-1]
+    return reversed_word == cleaner_word
+
+def isPalindromList(words):
+    palindroms = []
+    for word in words:
+        if isPalindrom(word):
+            palindroms.append(word)
+    return palindroms
+
+def isPalindromString(string):
+    clean_string = punctuation(string)
+    words = clean_string.split()
+    print(words)
+    palindromes = isPalindromList(words)
+    return palindromes
 
 print(isPalindromString("Madam, Anna went to the civic center"))
